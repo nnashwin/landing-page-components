@@ -140,6 +140,7 @@ export const CenteredTextBody = styled.p`
 
 export const StyledEmailSection = styled.div`
 	display: flex;
+	height: 3rem;
 `;
 
 export const StyledEmailInput = styled.input.attrs({
@@ -151,7 +152,6 @@ export const StyledEmailInput = styled.input.attrs({
 	color: black;
 	border-radius: .3rem;
 	padding: .3rem 1rem;
-	height: 3rem;
 `;
 
 export const StyledSubmitButton = styled.button`
@@ -160,7 +160,6 @@ export const StyledSubmitButton = styled.button`
 	border: 1px solid transparent;
 	border-radius: .3rem;
 	background-color: #007bff;
-	height: 3rem;
 	padding: .6rem;
 	&:hover {
 		background-color: #0069d9;
