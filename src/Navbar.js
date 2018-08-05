@@ -9,26 +9,34 @@ const Container = styled.div`
 	justify-content: space-between;
 	box-sizing: border-box;
 	text-align: left;
-	padding: 15px 40px;
+	padding: 0px 40px;
+	height: 100%;
 `;
 
-const StyledNavButton = styled.button`
+const StyledNavButton = styled.a`
+	&:-moz-focus-inner { border: 0; padding: 0; margin:0; }
 	background-color: rgb(0, 123, 255);
 	border-radius: 8px;
-	border: 1px solid rgb(0, 123, 255);
+	border: 0px solid rgb(0, 123, 255);
+	padding: 0px 8px;
 	cursor: pointer;
 	color: white;
-	padding: 8px;
+	height: 40px;
 	font-size: 20px;
 	&:hover {
 		background-color: #0069d9;
 		border-color: #0062cc;
 		transition: background-color .15s ease-in-out;
 	}
+	display: flex;
+	align-items: center;
 `;
 
 const StyledNavLink = styled.a`
 	font-size: 20px;
+	height: 40px;
+	display: flex;
+	align-items: center;
 `;
 	
 const Navbar = ({className, links}) => {
