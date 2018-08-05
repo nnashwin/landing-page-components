@@ -27,6 +27,7 @@ const IconDesc = styled.p`
 const IconDiv = styled.div`
 	max-width: 320px;
 	padding: 20px 0;
+	box-sizing: border-box;
 `;
 
 const IconPicDiv = styled.div`
@@ -59,11 +60,12 @@ const IconSection = ({className}) => {
 
 export const StyledIconSection = styled(IconSection)`
 	padding: 7rem 0;
+	box-sizing: border-box;
 `;
 
 export const SplitSection = styled.section`
 	display: flex;
-	flex-flow: row wrap;
+	flex-direction: row;
 	@media (max-width: ${sizes.smallTablet.width}) {
 		flex-direction: column;
 		justify-content: center;
@@ -71,6 +73,7 @@ export const SplitSection = styled.section`
 `;
 
 export const SplitPicDiv = styled.div`
+	box-sizing: border-box;
 	flex-basis: 50%;
 	max-width: 50%;
 	order: ${props => props.order === 'right' ? 2 : 1};
@@ -85,9 +88,9 @@ export const SplitPicDiv = styled.div`
 
 export const SplitTextDiv = styled.div`
 	flex-basis: 50%;
+	padding: 112px;
 	display: flex;
 	flex-direction: column;
-	padding: 112px;
 	line-height: 24px;
 	max-width: 50%;
 	max-height: 480px;
@@ -99,9 +102,11 @@ export const SplitTextDiv = styled.div`
 		width: 100%;
 		max-width: 100%;
 	}
+	box-sizing: border-box;
 `;
 
 export const SplitTextTitle = styled.h2`
+	box-sizing: border-box;
 	font-size: 32px;
 	line-height: 38.2px;
 	margin-bottom: 8px;
@@ -129,6 +134,7 @@ export const CenteredTitle = styled.h2`
 	margin-bottom: 8px;
 	margin-top: 0px;
 	padding-bottom: 0.5rem;
+	box-sizing: border-box;
 `;
 
 export const CenteredTextBody = styled.p`
@@ -152,6 +158,7 @@ export const StyledEmailInput = styled.input.attrs({
 	color: black;
 	border-radius: .3rem;
 	padding: .3rem 1rem;
+	box-sizing: border-box;
 `;
 
 export const StyledSubmitButton = styled.button`
@@ -165,6 +172,7 @@ export const StyledSubmitButton = styled.button`
 		background-color: #0069d9;
 		transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	}
+	box-sizing: border-box;
 `;
 
 export const FooterSection = styled.section`
@@ -179,6 +187,7 @@ export const FooterSection = styled.section`
 		justify-content: center;
 		padding-left: 0;
 	}
+	box-sizing: border-box;
 `;
 
 export const FooterLinksDiv = styled.div`
@@ -190,6 +199,7 @@ export const MediaLinksDiv = styled.div`
 	grid-column-start: 4;
 	padding: 20px 0px;
 	display: flex;
+	box-sizing: border-box;
 `;
 
 const Link = ({linkUrl, className, children}) => {
@@ -200,6 +210,7 @@ const Link = ({linkUrl, className, children}) => {
 
 export const MediaLink = styled(Link)`
 	padding: 0 10px;
+	box-sizing: border-box;
 `;
 
 export const CopyrightText = styled.p`
@@ -212,6 +223,7 @@ export const StyledListOfLinks = styled.ul`
 	list-style: none;
 	padding: 0px;
 	display: 'flex';
+	box-sizing: border-box;
 `;
 
 export const ListLink = ({linkUrl, linkText, className}) => {
@@ -228,4 +240,5 @@ export const StyledListLink = styled(ListLink)`
 	padding-left: ${props => props && props.first ? '0px' : '20px'};
 	border-right: ${props => props && props.last ? '' : '1px solid black'};
 	color: rgb(0, 123, 255);
+	box-sizing: border-box;
 `;
