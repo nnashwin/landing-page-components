@@ -1,7 +1,7 @@
 {
   "name": "landing-page-components",
   "version": "1.0.0",
-  "description": "landing-page-components React component",
+  "description": "basic landing page components for the busy developer.",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
