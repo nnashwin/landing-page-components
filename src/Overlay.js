@@ -26,6 +26,8 @@ export const StyledHeader = styled(Header)`
 		background-image: url(${props.imageUrl});
 		background-origin: padding-box;
 		background-size: cover;
+		background-position-x: ${props => props.backgroundPositionX ? props.backgroundPositionX : ''};
+		background-position-y: ${props => props.backgroundPositionY ? props.backgroundPositionY : ''};
 		padding: 192px 0px;
 		text-align: center;
 		position: relative;
