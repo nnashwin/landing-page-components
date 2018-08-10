@@ -51,7 +51,7 @@ class App extends Component {
     return (
       <div className="App">
 		<StyledNav links={[{href: "google.com", text: "Home"}, {href: "amazon.com", text: 'Sign Up', isButton: true}]}></StyledNav>
-		<StyledHeader imageUrl={"https://placekitten.com/1200/945"}></StyledHeader>
+		<StyledHeader imageUrl={"https://placekitten.com/1200/945"} backgroundPositionY="50%"></StyledHeader>
         
 		<StyledIconSection>
 			<p className="App-intro">
