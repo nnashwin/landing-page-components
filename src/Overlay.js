@@ -25,9 +25,6 @@ export const StyledHeader = styled(Header)`
 	${props => props.imageUrl && css`
 		background-image: url(${props.imageUrl});
 		background-origin: padding-box;
-		packground-position: 50% 50%;
-		background-position-x: 50%;
-		background-position-y: 50%;
 		background-size: cover;
 		padding: 192px 0px;
 		text-align: center;
