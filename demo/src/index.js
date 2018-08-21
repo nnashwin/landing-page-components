@@ -46,18 +46,30 @@ class App extends Component {
 				<SplitTextBody>{secondDivText}</SplitTextBody>	
 			</SplitTextDiv>
 		);
-	}
+	};
+
+	const iconArr = [{
+		title: 'Icon1',
+		pic: "\u{1f40e}",
+		desc: "This is a shady icon 1"
+	},
+	{
+		title: 'Icon2',
+		pic: "\u{1f40e}",
+		desc: "This is a shady icon 2"
+	},
+	{
+		title: 'Icon3',
+		pic: "\u{1f40e}",
+		desc: "This is a shady icon 3"
+	}];
 
     return (
       <div className="App">
 		<StyledNav links={[{href: "google.com", text: "Home"}, {href: "amazon.com", text: 'Sign Up', isButton: true}]}></StyledNav>
 		<StyledHeader imageUrl={"https://placekitten.com/1200/945"} backgroundPositionY="50%"></StyledHeader>
         
-		<StyledIconSection>
-			<p className="App-intro">
-			  To get started, edit <code>src/App.js</code> and save to reload.
-			</p>
-		</StyledIconSection>
+		<StyledIconSection icons={iconArr} />
 		<SplitSection>
 			<SplitTextDiv order={'left'} >
 				<SplitTextTitle>

@@ -32,27 +32,27 @@ const IconDiv = styled.div`
 
 const IconPicDiv = styled.div`
 	text-align: center;
+	:before {
+		content: '${props => props && props.picContent ? props.picContent : ''}';
+		font-size: 4.5rem;
+	}
 `;
 
-const IconSection = ({className}) => {
+const IconSection = ({className, icons}) => {
 	return (
 		<section className={className}>
 			<IconHolder>
-				<IconDiv>
-					<IconPicDiv>picture</IconPicDiv>
-					<IconTitle>Title</IconTitle>
-					<IconDesc>These are words which will go in the first paragraph</IconDesc>
-				</IconDiv>
-				<IconDiv>
-					<IconPicDiv>picture</IconPicDiv>
-					<IconTitle>Title</IconTitle>
-					<IconDesc>Use these words from the second paragrapn wisely</IconDesc>
-				</IconDiv>
-				<IconDiv>
-					<IconPicDiv>picture</IconPicDiv>
-					<IconTitle>Title</IconTitle>
-					<IconDesc>I love cake from the depths of my belly</IconDesc>
-				</IconDiv>
+				{
+					icons.map(icon => {
+						return (
+							<IconDiv>
+								<IconPicDiv picContent={icon.pic} />
+								<IconTitle>{icon.title}</IconTitle>
+								<IconDesc>{icon.desc}</IconDesc>
+							</IconDiv>
+						)
+					})
+				}
 			</IconHolder>
 		</section>
 	);
@@ -76,9 +76,9 @@ export const SplitPicDiv = styled.div`
 	box-sizing: border-box;
 	flex-basis: 50%;
 	max-width: 50%;
-	order: ${props => props.order === 'right' ? 2 : 1};
+	order: ${props => props && props.order === 'right' ? 2 : 1};
 	min-height: 480px;
-	background-image: url(${props => props.imageUrl ? props.imageUrl : ''});
+	background-image: url(${props => props && props.imageUrl ? props.imageUrl : ''});
 	background-repeat: no-repeat;
 	@media (max-width: ${sizes.smallTablet.width}) {
 		width: 100%;
@@ -94,7 +94,7 @@ export const SplitTextDiv = styled.div`
 	line-height: 24px;
 	max-width: 50%;
 	max-height: 480px;
-	order: ${props => props.order === 'right' ? 2 : 1};
+	order: ${props => props && props.order === 'right' ? 2 : 1};
 	width: 538px;
 	justify-content: center;
 	text-align: left;
@@ -124,8 +124,8 @@ export const CenteredSection = styled.section`
 	justify-content: center;
 	align-items: center;
 	min-height: 340px;
-	background-color: ${props => props.backgroundColor ? props.backgroundColor : '#0e1a2a'}
-	color: ${props => props.color ? props.color : 'whitesmoke'}
+	background-color: ${props => props && props.backgroundColor ? props.backgroundColor : '#0e1a2a'}
+	color: ${props => props && props.color ? props.color : 'whitesmoke'}
 `;
 
 export const CenteredTitle = styled.h2`
