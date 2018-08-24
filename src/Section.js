@@ -17,7 +17,7 @@ const IconTitle = styled.h3`
 	line-height: 12px;
 `;
 
-const IconDesc = styled.p`
+const IconDesc = styled.div`
 	font-size: 20px;
 	font-weight: 300;
 	line-height: 30px;
@@ -43,9 +43,9 @@ const IconSection = ({className, icons}) => {
 		<section className={className}>
 			<IconHolder>
 				{
-					icons.map(icon => {
+					icons.map((icon, index) => {
 						return (
-							<IconDiv>
+							<IconDiv key={index}>
 								<IconPicDiv picContent={icon.pic} />
 								<IconTitle>{icon.title}</IconTitle>
 								<IconDesc>{icon.desc}</IconDesc>
