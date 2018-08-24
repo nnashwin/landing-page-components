@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.4] - 2018-08-23
+### Added
+- Unique keys to sections inside of the Section and Navbar js files when mapping over icons and links to print html.
+
 ## [1.0.3] - 2018-08-20
 ### Added
 - enables icons to be added to the Icon div
