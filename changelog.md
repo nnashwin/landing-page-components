@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.5] - 2018-08-25
+### Fixes
+- An issue where not both StyledNav types were having their href property passed in correct
+
 ## [1.0.4] - 2018-08-23
 ### Added
 - Unique keys to sections inside of the Section and Navbar js files when mapping over icons and links to print html.
