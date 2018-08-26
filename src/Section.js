@@ -38,9 +38,9 @@ const IconPicDiv = styled.div`
 	}
 `;
 
-const IconSection = ({className, icons}) => {
+const IconSection = ({className, icons, id}) => {
 	return (
-		<section className={className}>
+		<section className={className} id={id}>
 			<IconHolder>
 				{
 					icons.map((icon, index) => {
@@ -50,8 +50,8 @@ const IconSection = ({className, icons}) => {
 								<IconTitle>{icon.title}</IconTitle>
 								<IconDesc>{icon.desc}</IconDesc>
 							</IconDiv>
-						)
-					})
+						);
+					});
 				}
 			</IconHolder>
 		</section>
