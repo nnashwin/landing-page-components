@@ -51,7 +51,7 @@ const IconSection = ({className, icons, id}) => {
 								<IconDesc>{icon.desc}</IconDesc>
 							</IconDiv>
 						);
-					});
+					})
 				}
 			</IconHolder>
 		</section>
