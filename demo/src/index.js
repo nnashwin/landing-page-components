@@ -71,7 +71,7 @@ class App extends Component {
 			Discover Kittens
 		</StyledHeader>
         
-		<StyledIconSection icons={iconArr} />
+		<StyledIconSection icons={iconArr} id="#about" />
 		<SplitSection>
 			<SplitTextDiv order={'left'} >
 				<SplitTextTitle>
