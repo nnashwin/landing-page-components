@@ -45,7 +45,7 @@ const Navbar = ({className, links}) => {
 			<Container>
 				{links.map((link, index) => {
 					let {href, text, isButton} = link;
-					return (isButton ? <StyledNavButton key={index}>{text}</StyledNavButton> : <StyledNavLink href={href} key={index}>{text}</StyledNavLink>);
+					return (isButton ? <StyledNavButton href={href} key={index}>{text}</StyledNavButton> : <StyledNavLink href={href} key={index}>{text}</StyledNavLink>);
 				})}
 			</Container>
 		</nav>
