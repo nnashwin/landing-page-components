@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.6] - 2018-08-25
+### Mistype
+- Mistyped package information and re-released with a different number (1.0.6)
+
 ## [1.0.5] - 2018-08-25
 ### Fixes
 - An issue where not both StyledNav types were having their href property passed in correct
