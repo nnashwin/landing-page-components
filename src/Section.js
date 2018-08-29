@@ -80,6 +80,7 @@ export const SplitPicDiv = styled.div`
 	min-height: 480px;
 	background-image: url(${props => props && props.imageUrl ? props.imageUrl : ''});
 	background-repeat: no-repeat;
+	background-size: ${props => props && props.backgroundSize ? props.backgroundSize : 'cover'}
 	@media (max-width: ${sizes.smallTablet.width}) {
 		width: 100%;
 		max-width: 100%;
