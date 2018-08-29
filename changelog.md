@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.8] - 2018-08-28
+### Added
+- Adds a background-size to the SplitPicDiv component.
+- Defaults the background-size to 'cover'
+
+## [1.0.7] - 2018-08-26
+### Added
+- adds id to be able to be passed in to the StyledIcon components
+
 ## [1.0.6] - 2018-08-25
 ### Mistype
 - Mistyped package information and re-released with a different number (1.0.6)
